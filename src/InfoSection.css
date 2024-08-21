@@ -1,0 +1,117 @@
+/* Main container for the InfoSection, ensures the content is displayed side by side */
+.info-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px 0 0 0;
+  background-color: #fff;
+}
+
+
+/* Wrapper that constrains the width of the content and centers it on the page */
+.info-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.info-image-container {
+  position: relative;
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-image {
+  max-width: 536px;
+  max-height: 492px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.background-svg {
+  width: 254px;
+  height: 274px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.info-text {
+  width: 50%;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.info-text h2 {
+  font-family: 'Overlock', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #35BCE7;
+  margin-bottom: 20px;
+}
+
+.info-text p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.gradient-button-info {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #BFE27D, #35BCE7);
+  color: white;
+  cursor: pointer;
+}
+
+.gradient-button-info:hover {
+  background: linear-gradient(45deg, #35BCE7, #BFE27D);
+}
+
+/* Media query for responsive design on small screens */
+@media (max-width: 768px) {
+  .background-svg {
+    display: none;
+  }
+
+  .info-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .info-container {
+    flex-direction: column;
+  }
+
+  .info-image-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .info-image {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .info-text {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: -20px;
+  }
+
+  .info-text h2 {
+    text-align: center; 
+  }
+}

@@ -1,0 +1,127 @@
+.footer {
+  background-color: #E5E5E5;
+  padding: 20px 0 0 0;
+  color: #1E1E1E; /* Updated color */
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.footer-section h4 {
+  font-family: 'Overlock', serif; /* Updated font family */
+  font-weight: 700; /* Updated font weight */
+  font-size: 20px; /* Updated font size */
+  line-height: 24px; /* Updated line height */
+  margin-bottom: 10px;
+  color: #1E1E1E; /* Updated color */
+}
+
+.footer-section p {
+  font-family: 'Poppins', sans-serif; /* Confirmed font family */
+  font-size: 16px; /* Updated font size */
+  line-height: 24px; /* Updated line height */
+  color: #1E1E1E; /* Updated color */
+  margin: 5px 0;
+}
+
+.footer-section a {
+  color: #1E1E1E; /* Ensure links are the same color as text */
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center; /* Center the container */
+  align-items: center;
+  background-color: #fff;
+}
+
+.footer-bottom p {
+  margin: 0; /* Remove any default margin */
+  color: #333;
+  text-align: right; /* Right align the copyright text */
+}
+
+.footer-bottom-container {
+  display: flex;
+  justify-content: space-between; /* Ensure spacing between left and right content */
+  max-width: 1200px; /* Limit the width */
+  width: 100%;
+  padding: 0 20px 15px 0; /* Add some padding to the sides */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-start; /* Left align the links */
+}
+
+.footer-links a {
+  margin-right: 20px; /* Add space between the links */
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px; /* Added gap between icons */
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links a {
+    margin: 5px 0;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+  }
+
+  .social-icons img {
+    margin: 0 7.5px; /* Equal margin on both sides for centering */
+  }
+
+  .footer-bottom-container {
+    padding: 0 20px;
+  }
+}
+

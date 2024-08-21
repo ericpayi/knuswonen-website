@@ -1,0 +1,177 @@
+/* Global resets */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  margin-top: 65px;
+  height: 560px;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1000;
+  position: relative;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Vertically center content */
+  height: 100%;
+  padding-bottom: 30px;
+  top: 210px;
+}
+
+.hero-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: white;
+  margin-bottom: 20px; /* Space between heading and buttons */
+}
+
+.relative {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.nav-btn {
+  width: unset;
+} 
+
+.hero-section h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: white; /* Ensure the text remains white for contrast */
+  margin: 0; /* Adjust the margin if needed */
+  text-align: left;
+  width: 890px;
+}
+
+.hero-button {
+  background-color: white;
+  color: #39468C;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  min-width: 288px;
+}
+
+.hero-button:hover {
+  background-color: #f3e8ff; /* Light purple */
+}
+
+.hero-button:focus {
+  outline: none;
+  border: none;
+}
+
+.hero-section button {
+  min-width: 288px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  font-family: 'Poppins', sans-serif;
+  color: #39468C; /* Text color */
+  background-color: #ffffff; /* Background color */
+  border: none; /* Remove default border */
+  outline: none; /* Remove focus outline */
+}
+
+.hero-section button:hover {
+  background-color: #E0D4FA; /* Light purple background on hover */
+  color: #39468C; /* Ensure text color remains the same */
+}
+
+.hero-section button:active,
+.hero-section button:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: none; /* Remove box shadow on click */
+}
+
+/* Adjusting the button icon styling */
+.hero-section button img {
+  filter: none; /* Ensure icons are clearly visible */
+}
+
+button {
+  min-width: unset;
+}
+
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #39468C;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #000080; /* Optional: Adjust the hover color */
+}
+
+/* Increase the z-index for the search and login modals */
+.search-modal, .login-modal {
+  z-index: 1001; /* Ensure they appear above other content */
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1001; /* Ensure it appears above other content */
+}
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding-bottom: 15px;
+    top: 150px;
+  }
+
+  .hero-heading {
+    text-align: center; /* Center text on mobile as well */
+  }
+
+  .hero-section h1 {
+    width: unset;
+    text-align: center;
+  }
+
+  .hero-button {
+    width: 100%; /* Ensure buttons take full width on mobile */
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-section button {
+    min-width: 238px;
+  }
+}
